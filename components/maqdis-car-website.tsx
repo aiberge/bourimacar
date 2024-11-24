@@ -1,12 +1,11 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MapPin, Users, Briefcase, Settings, Wind, ChevronDown, ChevronRight, Mail, Phone, X, Copy, MessageCircle, Truck } from 'lucide-react'
+import { MapPin, Mail, Phone, Copy, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -498,8 +497,8 @@ export function MaqdisCarWebsite() {
                     <h3 className="text-2xl font-semibold mb-4 text-gray-800">Notre Vision</h3>
                     <p className="text-gray-600">
                       Nous aspirons à devenir la référence incontournable de la location de voitures au Maroc, en proposant
-                      une flotte moderne et écologique, tout en mettant l'accent sur l'innovation, la durabilité et la
-                      satisfaction de nos clients. <span className="font-bold italic text-[#8D8850]">Bourima Rent Car</span> s'engage à être votre partenaire de confiance pour tous vos voyages.
+                      une flotte moderne et écologique, tout en mettant l&apos;accent sur l&apos;innovation, la durabilité et la
+                      satisfaction de nos clients. <span className="font-bold italic text-[#8D8850]">Bourima Rent Car</span> s&apos;engage à être votre partenaire de confiance pour tous vos voyages.
                     </p>
                   </motion.div>
                   <motion.div
@@ -676,8 +675,8 @@ export function MaqdisCarWebsite() {
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-gray-800">Confirmation de réservation</DialogTitle>
             <DialogDescription>
-              <p className="mt-4 text-gray-600">Merci d'avoir choisi <span className="font-bold italic text-[#8D8850]">Bourima Rent Car</span> pour votre location de voiture.</p>
-              <p className="mt-2 text-gray-600">Pour finaliser votre réservation, veuillez nous contacter par l'un des moyens suivants :</p>
+              <p className="mt-4 text-gray-600">Merci d&apos;avoir choisi <span className="font-bold italic text-[#8D8850]">Bourima Rent Car</span> pour votre location de voiture.</p>
+              <p className="mt-2 text-gray-600">Pour finaliser votre réservation, veuillez nous contacter par l&apos;un des moyens suivants :</p>
               <div className="mt-6 space-y-4">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open('https://wa.me/212633888722', '_blank')}>
                   <MessageCircle className="mr-2" />
